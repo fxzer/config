@@ -39,14 +39,13 @@ export MANPATH="/usr/local/man:$MANPATH"
 #zim end
 
 # ====== 别名 ======
-
-alias rg='ranger'
 alias ff='fastfetch'
 alias ls='lsd -X'
 alias ll='lsd -lhX'
 alias la='lsd -alhX'
 alias vi='vim'   
 alias cl='clear'
+alias rg='ranger'
 alias cf='c $(fzf --height 40% --reverse)'
 alias vf='fzf --height 40% --reverse --bind "enter:become(vim {})"'
 
@@ -66,19 +65,19 @@ alias l='nr lint'
 alias f='nr lintf'
 
 # cd
+alias ~='cd ~'
 alias ..='cd ../'
 alias ...='cd ../../'
-alias ....='cd ../../../'
 alias ..l.='cd ../../ && ll'
-alias ~='cd ~'
 alias cdtmp='cd `mktemp -d /tmp/fxzer-XXXXXX`'
 
 alias czsh='c ~/.zshrc'
 alias cgit='c ~/.gitconfig'
-alias vizsh="vi ~/.zshrc"
-alias vihost="vi /etc/hosts"
-alias vissh="vi ~/.ssh/config"
-alias vigit="vi ~/.gitconfig"
+alias chost="c /etc/hosts"
+alias cssh="c ~/.ssh/config"
+alias rm="rimraf"
+
+alias cnadd="pnpm dlx shadcn-ui@latest add "
 
 alias cip="curl cip.cc"
 alias ip="ipconfig getifaddr en0 && ipconfig getifaddr en1"
@@ -87,6 +86,7 @@ alias dps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Ports}
 alias dis='docker images'
 
 # Git
+
 alias gs='g status'
 alias gcz='g cz'
 alias gcze='g cz -e'
@@ -98,17 +98,14 @@ alias gm='g merge'
 alias gmc='g merge --continue' 
 alias grc='g rebase --continue'
 alias gst='g stash' # 暂存
-alias gstp='g stash pop' # 恢复暂存
 alias gps='g push'
+alias gpsf='git push --force-with-lease'
 alias gpl='g pull'
 alias gc='g clone'
 alias gc1='g clone --depth=1'
-alias gcr='g clone --recursive '
+alias gcr='g clone --recursive'
 alias gco='g checkout'
 alias gbr='g branch'
-alias gbra='g branch -a'
-alias gbrr='g branch -r'
-alias gdb='g branch -D' # 删除本地分支
 alias gconf='g config --global -e'
 alias gdrb='g push origin --delete' # 删除远程分支
 alias grv='g remote -v' # 查看所关联的远程仓库
