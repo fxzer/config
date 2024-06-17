@@ -1,0 +1,299 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "on",
+  "editor.suggest.preview": true,
+  "editor.smoothScrolling": true, //平滑滚动
+  "editor.maxTokenizationLineLength": 2000000,
+  "debug.showInlineBreakpointCandidates": false, //不显示断点候选项
+  "editor.stickyScroll.enabled": true, // 粘性滚动预览
+  "editor.cursorSmoothCaretAnimation": "on", // 平滑光标动画
+  "editor.find.addExtraSpaceOnTop": true, // 查找时顶部添加额外空间
+  "editor.guides.bracketPairs": "active", //彩虹括号匹配
+  "editor.renderWhitespace": "boundary", // 行断点
+  "files.autoSave": "onFocusChange",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+  "editor.fontFamily": "'Input Mono', 'Fira Code', 'JetBrainsMono','Source Code Pro'", // 显示建议预览
+  "editor.wordSeparators": "`~!@%^&*()=+[{]}\\|;:'\",.<>/?（），。；：",
+
+  /* 代码提示 */
+  "editor.suggest.snippetsPreventQuickSuggestions": false, // 控制活动代码段是否阻止快速建议
+  "editor.acceptSuggestionOnEnter": "smart", // 是否开启 `Enter` 键 接受建议， 启用内联建议:影响到 Copilot和 CodeGeeX
+
+  "editor.suggestSelection": "recentlyUsedByPrefix", // 代码补全列表中，优先选择最近的建议
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingDelete": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.accessibilitySupport": "off", //关闭屏幕阅读器支持
+  "editor.quickSuggestions": {
+    // 行内样式代码补全
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "diffEditor.wordWrap": "on", // 提示框中的建议选择方式
+
+
+  /*  终端 */
+  "terminal.external.osxExec": "Warp.app",
+  "terminal.integrated.scrollback": 10000, //最多显示行数
+  "terminal.integrated.fontFamily": "FiraMono Nerd Font Mono",
+  "terminal.integrated.macOptionIsMeta": true,  // 终端按方向键乱码
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.cursorStyle": "line", //光标样式
+  "terminal.integrated.cursorWidth": 2,
+  "vue.inlayHints.optionsWrapper": false,
+  "terminal.integrated.stickyScroll.enabled": true,
+  "debug.onTaskErrors": "debugAnyway", // 调试时忽略任务错误
+  "scss.lint.unknownAtRules": "ignore", // 忽略未知的 at 规则
+  "search.followSymlinks": false, // 不跟随符号链接 ,提升搜索性能
+  /* 全局搜索排除项 */
+  "search.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.vite": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true,
+    ".eslintcache": true
+  },
+  "workbench.tree.indent": 10,
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.list.smoothScrolling": true,
+  "workbench.list.horizontalScrolling": true, //水平滚动
+  "workbench.editor.closeOnFileDelete": true, // 文件删除时关闭相应的编辑器标签页
+  "workbench.editor.limit.enabled": true, // 启用标签页数限制
+  "workbench.editor.limit.perEditorGroup": true, // 在每个编辑器组中限制标签页数
+  "workbench.editor.limit.value": 5, // 每个编辑器组中标签页的最大数量
+  "workbench.tree.enableStickyScroll": true, //  目录层级启用粘性滚动
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+
+  /* ----------扩展配置---------- */
+  "extensions.autoUpdate": "onlyEnabledExtensions", // 仅自动更新已启用的扩展
+  "extensions.ignoreRecommendations": true, // 忽略扩展推荐
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true, // 启用简化的对话框
+  "git.autofetch": true, // 打开项目时自动获取 Git 仓库的变化
+  "git.untrackedChanges": "separate", // 未跟踪的更改显示在单独的组中
+  "security.workspace.trust.untrustedFiles": "open", //打开未信任文件
+  // Console Log 插件
+  "consoleLog.Number Argument": "console.log 接收 2 个参数",
+  "consoleLog.Select Quotes": "single",
+  "consoleLog.Show Semi": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  // GitLens 插件
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false, //不展示首行的最近更改
+  "iconify.inplace": true,
+
+  // leetcode插件
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.hint.setDefaultLanguage": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.workspaceFolder": "/Users/fxzer/m/leetcode",
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.hint.commentDescription": false,
+  //类型体操
+  // "typeChallenges.defaultLanguage": "zh",
+  // "typeChallenges.workspaceFolder": "/Users/fxzer/m/type-challenges",
+  //别名跳转
+  "alias-skip.allowedsuffix": ["js", "vue", "jsx", "ts"],
+  "alias-skip.mappings": {
+    "@": "/src"
+  },
+  // fileNesting 文件嵌套
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.optimizeStylesheetParsing": false,
+  
+  /* ----------VIM 配置---------- */
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.flash.enable": true,
+  "vim.flash.ignorecase": false,
+  "vim.leader": "<space>",
+  //提成性能: 配置扩展执行在不同的进程中
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 10
+  },
+  "vim.argumentObjectOpeningDelimiters": ["(", "[", "{"],
+  "vim.argumentObjectClosingDelimiters": [")", "]", "}"],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    //基于缩进的删除函数
+    {
+      "before": ["a", "i"],
+      "after": ["a", "I"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    //移动到行尾非空格
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    //把 J、K 配置成 Tab标签 切换
+    {
+      "before": ["K"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["J"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    //删除一个函数 :需要在函数最外层
+    {
+      "before": ["<leader>", "d", "f"],
+      "after": ["V", "$", "%", "d"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    /* ---------- 重构手法： 重命名 ------------- */
+    //1.重命名
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["s"],
+      "after": ["c", "l"]
+    },
+    //修改匹配到下一个单词到行尾
+    {
+      "before": ["S"],
+      "after": ["*", "C"]
+    },
+    {
+      "before": ["<leader>", "n", "f"],
+      "commands": ["explorer.newFile"]
+    },
+    {
+      "before": ["<leader>", "n", "d"],
+      "commands": ["explorer.newFolder"]
+    },
+    {
+      "before": ["<leader>", "%"],
+      "commands": ["editor.emmet.action.matchTag"]
+    }
+  ],
+  //可视化模式
+  "vim.visualModeKeyBindings": [
+    //移动到行首非空格
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    //移动到行尾非空格
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["<leader>", "%"],
+      "commands": ["editor.emmet.action.matchTag"]
+    },
+    // gd 跳转到定义
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "emmet.useInlineCompletions": true,
+  "iconify.excludes": ["el"],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "hediet.vscode-drawio.resizeImages": null,
+  "prettier.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.arrowParens": "avoid",
+  "prettier.singleQuote": true,
+  "explorer.compactFolders": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "fittencode.languagePreference.displayPreference": "zh-cn",
+  "fittencode.languagePreference.commentPreference": "zh-cn",
+  "Codegeex.Privacy": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.startupEditor": "none",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+
+  /* typescript  */
+  "typescript.locale": "zh-CN",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always", //文件位置变动，自动更新引用路径
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "javascript.inlayHints.parameterNames.enabled": "none",
+  "typescript.preferences.includePackageJsonAutoImports": "on", //自动导入package.json中的模块
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.suggest.autoImports": true, //自动导入
+  "typescript.suggest.autoImports": true,
+
+  /* vue */
+  "vue.inlayHints.missingProps": true, //补全缺失的props
+  "vue.autoInsert.dotValue": true,
+  "vue.updateImportsOnFileMove.enabled": true, //vue文件位置变动，自动更新引用路径
+  "files.autoGuessEncoding": true, //自动猜测文件编码
+  "search.searchEditor.singleClickBehaviour": "peekDefinition",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "workbench.colorTheme": "Vitesse Dark Custom",
+  "editor.minimap.maxColumn": 80
+}

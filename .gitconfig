@@ -1,0 +1,52 @@
+[safe]
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-core
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-cask
+	directory = /opt/homebrew
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-core/
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-cask/
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-services/
+[user]
+	name = fxzer
+	email = fxzer8888@163.com
+[core] 
+	excludesfile = ~/.gitignore
+	ignorecase = false # 区分大小写
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	# s = status
+	# c = clone
+	# a = add .
+	# c1 = clone --depth=1
+	# cr = clone --recursive 
+	# cm = commit -m
+	# ss = status -sb # 简洁状态
+	# st = stash # 暂存
+	# stp = stash pop # 恢复暂存
+	# ps = push
+	# pl = pull
+	# co = checkout
+	# br = branch
+	# bra = branch -a
+	# conf = config --global -e
+	# db = push origin --delete # 删除远程分支
+	# pso = push --u origin main #第一次提交 
+	# rv = remote -v # 查看远程仓库
+	# ra = remote add  # 添加远程仓库 例如：upstream
+	# rs = remote set-url --add origin  # 给 origin 添加新的远程仓库地址 比如 gitee
+	# cam = commit --amend # --message='new commit' 修改最后一次提交信息
+	# can = commit --amend --no-edit # 当前提交合并到上次提交
+  # rbc = rebase --continue # 当前提交合并到上次提交
+	# rba = rebase --abort # 当前提交合并到上次提交
+	# ls = log -3 HEAD --pretty=format:'hash: %C(yellow)%h %n主题: %C(bold Magenta)%s %n日期: %C(black)%cd%Cgreen(%cr) %n作者: %C(bold blue)%an %n' --date=format:'%Y-%m-%d %H:%M:%S'# 查看最后3次提交
+	# lp = log -n 10 --graph --pretty=format:'hash: %C(yellow)%h %n主题: %C(bold Magenta)%s %n日期: %C(black)%cd%Cgreen(%cr) %n作者: %C(bold blue)%an %n' --date=format:'%Y-%m-%d %H:%M:%S'  # 查看最近10次提交
+	# ll = log --color --graph --pretty=format:'%C(yellow)%h%Creset %C(black)[%cd]%Cgreen(%cr)%C(bold blue)<%an>%Creset -%C(cyan)%d%Creset %s' --date=format:'%Y-%m-%d %H:%M:%S'  # 查看所有提交历史
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
