@@ -168,15 +168,6 @@
       "before": ["L"],
       "after": ["g", "_"]
     },
-    //把 J、K 配置成 Tab标签 切换
-    {
-      "before": ["K"],
-      "commands": ["workbench.action.nextEditor"]
-    },
-    {
-      "before": ["J"],
-      "commands": ["workbench.action.previousEditor"]
-    },
     //删除一个函数 :需要在函数最外层
     {
       "before": ["<leader>", "d", "f"],
@@ -223,14 +214,6 @@
     {
       "before": ["L"],
       "after": ["g", "_"]
-    },
-    {
-      "before": ["K"],
-      "after": ["5", "k"]
-    },
-    {
-      "before": ["J"],
-      "after": ["5", "j"]
     },
     {
       "before": ["<leader>", "%"],

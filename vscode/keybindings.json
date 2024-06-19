@@ -1,5 +1,16 @@
 // 将键绑定放在此文件中以覆盖默认值
 [
+    // 切换编辑器 tab
+    {
+      "key": "ctrl+j",
+      "command": "workbench.action.nextEditor",
+      "when": "!suggestWidgetVisible"
+  },
+  {
+      "key": "ctrl+k",
+      "command": "workbench.action.previousEditor",
+      "when": "!suggestWidgetVisible"
+  },
   //删除当前行
   {
     "key": "cmd+d",
@@ -459,5 +470,10 @@
   {
     "key": "cmd+o",
     "command": "workbench.action.files.openFile"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevPageSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   }
 ]
