@@ -1,16 +1,16 @@
 // 将键绑定放在此文件中以覆盖默认值
 [
-    // 切换编辑器 tab
-    {
-      "key": "ctrl+j",
-      "command": "workbench.action.nextEditor",
-      "when": "!suggestWidgetVisible"
+  // 切换编辑器 tab
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.previousEditor",
+    "when": "!suggestWidgetVisible"
   },
   {
-      "key": "ctrl+k",
-      "command": "workbench.action.previousEditor",
-      "when": "!suggestWidgetVisible"
-  },
+    "key": "ctrl+k",
+    "command": "workbench.action.nextEditor",
+    "when": "!suggestWidgetVisible"
+},
   //删除当前行
   {
     "key": "cmd+d",
@@ -305,11 +305,6 @@
     "when": "hasChatProvider && inChat"
   },
   {
-    "key": "ctrl+l",
-    "command": "-workbench.action.chat.clear",
-    "when": "hasChatProvider && inChat"
-  },
-  {
     "key": "alt+cmd+f",
     "command": "-editor.action.startFindReplaceAction",
     "when": "editorFocus || editorIsOpen"
@@ -397,21 +392,6 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+delete",
-    "command": "-deleteRight",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "-deleteRight",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "-deleteAllRight",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+enter",
     "command": "-github.copilot.generate",
     "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
@@ -435,45 +415,17 @@
   },
   {
     "key": "cmd+r",
-    "command": "-workbench.action.reloadWindow",
-    "when": "isDevelopment"
-  },
-  {
-    "key": "cmd+r",
     "command": "-workbench.action.terminal.runRecentCommand",
     "when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
   },
   {
-    "key": "cmd+o",
-    "command": "-workbench.action.files.openFile",
-    "when": "false"
-  },
-  {
-    "key": "cmd+o",
-    "command": "-workbench.action.files.openFolderViaWorkspace",
-    "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
-  },
-  {
-    "key": "cmd+o",
-    "command": "-workbench.action.files.openFileFolder",
-    "when": "isMacNative && openFolderWorkspaceSupport"
-  },
-  {
-    "key": "cmd+o",
-    "command": "-workbench.action.files.openLocalFileFolder",
-    "when": "remoteFileDialogVisible"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "-workbench.action.openRecent"
-  },
-  {
-    "key": "cmd+o",
-    "command": "workbench.action.files.openFile"
+    "key": "ctrl+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && vim.active && vim.mode == 'VisualLine'" 
   },
   {
     "key": "ctrl+k",
-    "command": "selectPrevPageSuggestion",
+    "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   }
 ]
