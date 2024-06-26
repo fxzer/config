@@ -196,14 +196,6 @@
       "after": ["*", "C"]
     },
     {
-      "before": ["<leader>", "n", "f"],
-      "commands": ["explorer.newFile"]
-    },
-    {
-      "before": ["<leader>", "n", "d"],
-      "commands": ["explorer.newFolder"]
-    },
-    {
       "before": ["<leader>", "%"],
       "commands": ["editor.emmet.action.matchTag"]
     }
