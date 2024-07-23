@@ -283,5 +283,10 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.minimap.maxColumn": 80,
   "workbench.colorTheme": "Vitesse Dark Custom",
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "workbench.editor.enablePreview": false,
+  "git.openRepositoryInParentFolders": "always",
+  "git.autoStash": true
 }
