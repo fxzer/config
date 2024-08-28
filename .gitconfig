@@ -6,6 +6,8 @@
 	ignorecase = false # 区分大小写
 [alias]
 	# s = status
+[pull]
+	rebase = true
 [push]
 	autoSetupRemote = true
 [init]
