@@ -147,3 +147,34 @@ function gcs() {
   git checkout
 }
 
+
+# 创建并进入目录
+function mkcd() {
+  mkdir -p "$@" && cd "$@"
+}
+
+
+# 快速导航到指定目录
+function cdl() {
+  cd $1  # 进入指定目录目录下
+  ll                 # 列出文件
+}
+
+# 一键提交代码
+function gpush() {
+  git add .
+  git commit -m "$1"
+  git push
+}
+
+# 快速克隆并进入项目
+function gccd() {
+  git clone $1
+  folder=$(basename "$1" .git)
+  cd "$folder"
+}
+
+# macOS 下的 Homebrew 快速更新和清理
+function brewup() {
+  brew update && brew upgrade && brew cleanup
+}
